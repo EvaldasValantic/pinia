@@ -1,7 +1,13 @@
 import { createApp } from "vue"
 import App from "./App.vue"
+import { createPinia } from "pinia"
 
-createApp(App).mount("#app")
+const pinia = createPinia()
+
+const app = createApp(App)
+app.use(pinia)
+app.mount("#app")
+
 
 const last  = <T>(arr: T[]) => {
     return arr[arr.length - 1];
@@ -26,7 +32,7 @@ const v4 = makeFullName({
     age: 15,
 })
 
-interface Tab<T> {
+type Tab<T> = {
     id: string;
     position: number;
     data: T;
