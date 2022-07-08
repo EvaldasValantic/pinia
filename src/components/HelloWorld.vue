@@ -33,7 +33,7 @@ const { count } = storeToRefs(counter);
 
 <style scoped>
 a {
-  color: #42b983;
+  color: #130c32;
 }
 
 label {
