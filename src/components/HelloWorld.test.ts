@@ -33,11 +33,11 @@ it("should mount component", async () => {
 
   // expect(wrapper.html()).toMatchSnapshot();
 
-    await wrapper.get('button').trigger('click')
+    await wrapper.get("button").trigger("click")
 
-    expect(wrapper.text()).toContain('3')
+    expect(wrapper.text()).toContain("3")
 
-    await wrapper.get('button').trigger('click')
+    await wrapper.get("button").trigger("click")
 
-    expect(wrapper.text()).toContain('4')
+    expect(wrapper.text()).toContain("4")
 });
